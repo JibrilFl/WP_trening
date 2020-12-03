@@ -38,8 +38,8 @@
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
                                 <div class="header__contacts-tel">
-                                    <a href="<?php the_field('phone', 2); ?>"><?php the_field('phone', 2); ?></a>
-                                    <a href="<?php the_field('phone_2', 2); ?>"><?php the_field('phone_2', 2); ?></a>
+                                    <a href="tel:<?php the_field('phone', 2); ?>"><?php the_field('phone', 2); ?></a>
+                                    <a href="tel:<?php the_field('phone_2', 2); ?>"><?php the_field('phone_2', 2); ?></a>
                                 </div>
                             </div>
                             <div class="header__contacts-item">
