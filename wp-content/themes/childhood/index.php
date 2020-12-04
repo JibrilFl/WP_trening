@@ -179,7 +179,7 @@ get_header();
                 </div>
 
 
-                <h2 class="subtitle">Развивающие игрушки</h2>
+                <h2 class="subtitle"><?php the_field('sub_toys'); ?></h2>
                 <div class="toys__wrapper">
 
                     <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_7.jpg)">
@@ -206,7 +206,8 @@ get_header();
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="toys__alert">
-                            <span>Не нашли то, что искали?</span> Свяжитесь с нами - и мы с радостью создадим любую игрушку по вашему желанию. Вы можете выбрать все: размер, материал, формы...!
+                            <span>Не нашли то, что искали?</span> 
+                            <?php the_field('toys_alert'); ?>
                         </div>
                     </div>
                 </div>
@@ -293,9 +294,7 @@ get_header();
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="contacts__descr underlined">
-                            Мы находимся в Москве, метро "Парк победы", в деловом центре "Парк победы", второй этаж
-                            <br> <br>
-                            по адресу ул. Василисы Кожиной, 1
+                            <?php the_field('contacts_info'); ?>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -508,28 +507,26 @@ get_header();
                                 <ul class="glide__slides">
                                     <li class="glide__slide">
                                         <div class="feedslider__title">
-                                            Иванов Игорь
+                                            <?php the_field('feedslider__title_1'); ?>
                                         </div>
                                         <div class="feedslider__text">
-                                            Спасибо огромное за вежливость и терпение. Обратился к вам только с идеей для подарка, а вы развили её до полноценного проекта! Так что мой сын теперь круглые сутки играет с железной дорогой, построенной по его планам)
-                                            <br><br>
-                                            Отдельное спасибо менеджеру Маргарите за терпение и стойкость!
+                                            <?php the_field('feedslider__text_1'); ?>
                                         </div>
                                     </li>
                                     <li class="glide__slide">
                                         <div class="feedslider__title">
-                                            Черкессов Алексей Дмитриевич
+                                            <?php the_field('feedslider__title_2'); ?>
                                         </div>
                                         <div class="feedslider__text">
-                                            Заказывал у ребят целую партию игрушек для детского сада. Новый год прошел на ура! Теперь все детишки счастливы и не расстаются со своими подарками, а самые хитрые спрашивают когда следующие праздники)
+                                            <?php the_field('feedslider__text_2'); ?>
                                         </div>
                                     </li>
                                     <li class="glide__slide">
                                         <div class="feedslider__title">
-                                            Анна Сергеевна
+                                            <?php the_field('feedslider__title_3'); ?>
                                         </div>
                                         <div class="feedslider__text">
-                                            Решила к дню рождения своей малышки заказать подарки здесь. И ни сколько не жалею! Мишка именно такой, как я хотела, прямо как у меня в детстве: мягкий, приятный на ощупь и оочень милый. Сразу видно, что ручная работа.
+                                            <?php the_field('feedslider__text_3'); ?>
                                         </div>
                                     </li>
                                 </ul>
